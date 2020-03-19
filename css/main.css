@@ -3,6 +3,10 @@ h1, h2 {
     color: #808080;
 }
 
-a {
+a:link {
     color: black;
+}
+
+a:visited {
+    color: green;
 }
