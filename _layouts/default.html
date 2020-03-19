@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>{{ page.title }}</title>
+
+    <meta name="author" content="Kevin Nowland">
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+
+    <nav>
+    <ul>
+      <li><a href="/">home</a></li>
+      <li><a href="/about">about</a></li>
+      <li><a href="/blog">blog</a></li>
+      <li><a href="/cv">cv</a></li>
+    </ul>
+    </nav>
+
+    <div class="container">
+
+      {{ content }}
+
+    </div><!-- container -->
+
+    <footer>
+      <ul>
+        <li><a href="mailto:kevin.nowland@gmail.com">email</a></li>
+        <li><a href="https://github.com/kevinnowland">github</a></li>
+      </ul>
+    </footer>
+
+  </body>
+
+</html>
