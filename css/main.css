@@ -3,7 +3,7 @@ body {
     width: 70%;
 }
 
-h1, h2 {
+h1, h2, p {
     font-family: 'Open Sans', sans-serif;
     color: #808080;
 }
