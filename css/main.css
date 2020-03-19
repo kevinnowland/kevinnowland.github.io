@@ -1,12 +1,9 @@
+body {
+    margin: 60px auto;
+    width: 70%;
+}
+
 h1, h2 {
     font-family: 'Open Sans', sans-serif;
     color: #808080;
-}
-
-a:link {
-    color: black;
-}
-
-a:visited {
-    color: green;
 }
