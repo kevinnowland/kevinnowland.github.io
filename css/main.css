@@ -3,6 +3,25 @@ body {
     width: 70%;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
 h1, h2, p {
     font-family: 'Open Sans', sans-serif;
     color: #808080;
