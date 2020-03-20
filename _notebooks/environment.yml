@@ -1,0 +1,6 @@
+name: gitpage
+dependencies:
+    - python=3.7
+    - pandas=1.0.*
+    - numpy=1.18.*
+    - pip
