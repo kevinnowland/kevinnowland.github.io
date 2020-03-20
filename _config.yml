@@ -2,4 +2,4 @@
 name: Kevin Nowland
 description: Kevin Nowland's personal site
 url: kevinnowland.com
-markdown: jekyll-commonmark
+markdown: CommonMark
