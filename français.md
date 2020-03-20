@@ -7,3 +7,10 @@ title: Kevin Nowland French Blog
 
 Bonjour, le Monde !
 
+<ul>
+  {% for post in site.categories.french %}
+    <li>
+      <a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
