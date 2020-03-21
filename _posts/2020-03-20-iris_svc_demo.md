@@ -132,7 +132,7 @@ plt.show()
 ```
 
 
-![png](/assets/iris_svc_demo_files/iris_svc_demo_5_0.png)
+![png](/assets/images/iris_svc_demo_files/iris_svc_demo_5_0.png)
 
 
 This is clearly linearly separable, so let's just use a Linear SVC to classify these points. This is just an example anyway.
@@ -182,5 +182,5 @@ plt.show()
 ```
 
 
-![png](/assets/iris_svc_demo_files/iris_svc_demo_10_0.png)
+![png](/assets/images/iris_svc_demo_files/iris_svc_demo_10_0.png)
 
