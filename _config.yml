@@ -3,5 +3,6 @@ name: Kevin Nowland
 description: Kevin Nowland's personal site
 url: kevinnowland.com
 markdown: kramdown
+highlighter: rouge
 kramdown:
-  input: GFM
+    input: GFM

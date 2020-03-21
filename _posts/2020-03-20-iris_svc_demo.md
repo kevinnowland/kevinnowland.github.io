@@ -16,7 +16,6 @@ import numpy as np
 from sklearn.datasets import load_iris
 ```
 
-
 ```python
 iris = load_iris()
 df_iris = pd.DataFrame(data= np.c_[iris['data'],
@@ -29,19 +28,6 @@ df_iris.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -146,7 +132,7 @@ plt.show()
 ```
 
 
-![png](iris_svc_demo_files/iris_svc_demo_5_0.png)
+![png](/assets/iris_svc_demo_files/iris_svc_demo_5_0.png)
 
 
 This is clearly linearly separable, so let's just use a Linear SVC to classify these points. This is just an example anyway.
@@ -196,5 +182,5 @@ plt.show()
 ```
 
 
-![png](iris_svc_demo_files/iris_svc_demo_10_0.png)
+![png](/assets/iris_svc_demo_files/iris_svc_demo_10_0.png)
 
