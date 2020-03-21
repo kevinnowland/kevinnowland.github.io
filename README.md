@@ -16,7 +16,7 @@ mv notebook.md ../_posts/
 
 If the notebook has images move them to the images folder.
 ```bash
-mv image_folder ../assets/images/
+mv notebook_files/ ../assets/images/
 ```
 Then you have to rename where the images are coming from. So
 inside the markdwn file, run a command like
