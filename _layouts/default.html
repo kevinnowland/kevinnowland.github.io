@@ -10,9 +10,18 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+    <!-- our defualt style -->
     <link rel="stylesheet" type="text/css" href="/assets/css/default.css">
+
+    <!-- syntax highlighting -->
     <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css">
+
+    <!-- hamburger menu button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   </head>
 
@@ -25,10 +34,20 @@
   </div> <!-- header -->
 
   <div class="row">
-    <div class="col-2 menu">
+    <div class="col-2 menu" id="myMenu">
 
       <ul>
-        <li><a href="/">Home</a></li>
+        <li> 
+            <span id="blank"></span>
+            <span id="home">
+              <a href="/">Home</a>
+            </span>
+            <span id="bars">
+              <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </span>
+        </li>
         <li><a href="/about">About</a></li>
         <li><a href="/code">Code Blog</a></li>
         <li><a href="/français">Blog Français</a></li>
@@ -50,21 +69,17 @@
   </div> <!-- row -->
   
 
-<!--
-    <nav>
-    <ul>
-      <li><a href="/">home</a></li>
-      <li><a href="https://github.com/kevinnowland">github</a></li>
-      <li><a href="mailto:kevin.nowland@gmail.com">email</a></li>
-    </ul>
-    </nav>
+  <script>
+    function responsiveMenu() {
+      var x = document.getElementById("myMenu");
+      if (x.className === "col-2 menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "col-2 menu";
+      }
+    }
+  </script><!-- responsiveMenu script -->
 
-    <div class="container">
-
-      {{ content }}
-
-    </div>
- -->
   </body>
 
 </html>

@@ -24,6 +24,7 @@ html {
     padding-bottom: 5px;
 }
 
+/* DEFAULT MOBILE MENU ONLY DISPLAY ONE */
 .menu ul {
     list-style-type: none;
     padding: 0px;
@@ -35,11 +36,10 @@ html {
     margin-bottom: 7px;
     background-color: lightgrey;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
 }
 
-.menu li:hover {
-    background-color: grey;
-}
+.menu li:not(:first-child) { display: none; }
 
 .menu a {
   display: block;
@@ -47,7 +47,28 @@ html {
   text-decoration: none;
 }
 
-/* mobile phones */
+span#blank {
+    display: inline-block;
+    width: 4%;
+}
+
+span#home{
+    display: inline-block;
+    width: 90%;
+}
+
+span#bars {
+    display: inline-block;
+    width: 4%;
+}
+
+
+/* MOBILE MENU DISPLAY ALL */
+.menu.responsive li { display: block; }
+
+
+/* OTHER MOBILE STUFF */
+
 .header {
     background-color: orange;
     color: white;
