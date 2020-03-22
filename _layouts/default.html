@@ -7,6 +7,8 @@
 
     <meta name="author" content="Kevin Nowland">
     <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="/assets/css/default.css">
@@ -16,13 +18,42 @@
 
   <body>
 
+  <div class="header">
+    
+    <h1> Kevin Nowland </h1>
+
+  </div> <!-- header -->
+
+  <div class="row">
+    <div class="col-2 menu">
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/code">Code Blog</a></li>
+        <li><a href="/français">Blog Français</a></li>
+        <li><a href="/cv">CV</a></li>
+      </ul><!-- main -->
+
+      <div class="logo">
+
+      </div>
+
+    </div><!-- menu -->
+
+    <div class="col-10 main">
+
+      {{ content }}
+
+    </div>
+
+  </div> <!-- row -->
+  
+
+<!--
     <nav>
     <ul>
       <li><a href="/">home</a></li>
-      <li><a href="/about">about</a></li>
-      <li><a href="/français">français</a></li>
-      <li><a href="/code">code</a></li>
-      <li><a href="/cv">cv</a></li>
       <li><a href="https://github.com/kevinnowland">github</a></li>
       <li><a href="mailto:kevin.nowland@gmail.com">email</a></li>
     </ul>
@@ -32,8 +63,8 @@
 
       {{ content }}
 
-    </div><!-- container -->
-
+    </div>
+ -->
   </body>
 
 </html>
