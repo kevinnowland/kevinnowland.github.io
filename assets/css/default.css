@@ -17,6 +17,13 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    font-weight: bold;
+    color: #ff6600;
+    text-decoration: none;
+}
+
+
 .header {
     padding-left: 15px;
     padding-right: 15px;
