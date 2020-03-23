@@ -27,7 +27,15 @@ necessity given that I want to have this website available and I only began
 writing it last week.
 
 
+
 ## Further behind the curtain
+
+
+If you really want to know how this works technically or why I'm makig some
+of the choices that I am, read this section.
+
+
+### Code stuff
 
 
 More technically, this website exists as a 
@@ -50,3 +58,16 @@ large committing directly to master and immediately pushing up to GitHub--
 as long as jekyll doesn't tell me something is completely broken. This
 isn't a collaborative project, so I'm not going to feel bad about not putting 
 changes on separate branches.
+
+
+### Design choices
+
+
+As with all personal websites, this site is a public mask over a private life.
+What's here is what I want to show publicly, but I hope it doesn't come off
+too much as a technical portfolio, even if that is partly its purpose.
+I mostly hope to use this site to encourage my own growth. If I am not 
+making progress in some interest, then that will be reflected by 
+a lack of change here, and I don't want my public persona to solidify. 
+This is another reason to minimize lag between what exists locally on
+my laptop and what is pushed to GitHub.
