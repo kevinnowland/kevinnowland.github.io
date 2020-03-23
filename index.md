@@ -39,7 +39,7 @@ of the choices that I am, read this section.
 
 
 More technically, this website exists as a 
-[git repository](https://github.com/kevinnowlnad/kevinnowland.github.io).
+[git repository](https://github.com/kevinnowland/kevinnowland.github.io).
 Feel free to take a look at anything there. Since GitHub Pages uses Jekyll,
 most of the content exists as markdown files that I edit using vim. With
 the exception of the syntax highlighting (generated using 
