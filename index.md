@@ -45,13 +45,13 @@ most of the content exists as markdown files that I edit using vim. With
 the exception of the syntax highlighting (generated using 
 `rougify style <theme>`), I am writing the CSS and html layouts.
 
-The <a class="inline" href="/code">code</a> blog is formed by converting
-Jupyter notebooks to markdown using `jupyter nbconvert --to markdown`. I then
-make some light substitutions to the resultant markdown file and move
-move included figures to the appropriate folder. I need to write a
-fish script to makes these formulaic changes for me, but have not yet. This
-means that code posts might be visible as drafts the way other posts should 
-be.
+Posts on the <a class="inline" href="/code">code</a> blog are formed by 
+converting Jupyter notebooks to markdown using 
+`jupyter nbconvert --to markdown`. I then make some light substitutions to 
+the resultant markdown file and move move included figures to the appropriate 
+folder. I need to write a fish script to makes these formulaic changes for me,
+but have not yet. This means that code posts might not be visible as drafts 
+the way other posts should be.
 
 The work in progress nature of the webste happens because I am by and
 large committing directly to master and immediately pushing up to GitHub--
