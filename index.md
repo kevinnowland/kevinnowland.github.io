@@ -31,7 +31,7 @@ writing it last week.
 ## Further behind the curtain
 
 
-If you really want to know how this works technically or why I'm makig some
+If you really want to know how this works technically or why I'm making some
 of the choices that I am, read this section.
 
 
