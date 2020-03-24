@@ -33,42 +33,62 @@
 
   <body>
 
-  <div class="header">
-    
-    <h1> Kevin Nowland </h1>
+  <a href="javascript:void(0)" class="openbtn" onclick="openNav()">
+    <i class="fa fa-bars"></i>
+  </a>
 
-  </div> <!-- header -->
+  <nav class="menu" id="myMenu">
 
-  <div class="row">
-    <div class="col-2 menu" id="myMenu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!--
+      <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+      </a>
+-->
 
-      <ul>
-        <li id="bars">
-            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </li>
-        <li><a href="/">Home</a> </li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/code">Blog</a></li>
-        <li><a href="/français">Français</a></li>
-        <li><a href="/cv">CV</a></li>
-      </ul><!-- main -->
-
-      <div class="logo">
-
+      <div class="colorBlock"> 
+        <img src="/assets/images/website-pic.png">
       </div>
 
-    </div><!-- menu -->
+      <a href="/" class="menuLink">Home</a>
+      <a href="/about" class="menuLink">About</a>
+      <a href="/code" class="menuLink">Code</a>
+      <a href="/français" class="menuLink">Français</a>
+      <a href="/cv" class="menuLink">CV</a>
 
-    <div class="col-10 main">
+  </nav>
 
-      {{ content }}
 
-    </div>
+  <div id="main">
 
-  </div> <!-- row -->
-  
+    {{ content }}
+
+  </div>
+
+  <script>
+    // nav functions
+
+    function closeNav() {
+      document.getElementById("myMenu").style.width = "0px";
+      document.body.style.backgroundColor = "white";
+
+      // change color of links to normal
+      var a = document.getElementById('main').getElementsByTagName('a');
+      for (var i=0; i < a.length; i++) {
+        a[i].style.color = "#ff6600";
+      }
+    }
+
+    function openNav() {
+      document.getElementById("myMenu").style.width = "250px";
+      document.body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+
+      // change color of links to not be awful
+      var a = document.getElementById('main').getElementsByTagName('a');
+      for (var i=0; i < a.length; i++) {
+        a[i].style.color = "black";
+      }
+    }
+  </script>
 
   <script>
     function responsiveMenu() {
