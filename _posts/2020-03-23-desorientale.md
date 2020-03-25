@@ -7,19 +7,13 @@ tags: [critique, draft]
 
 ## Désorientale
 
-- Introduction: structure
-- Déconnéxion entre le passé et le présent 
-    - le passé sans Kimia
-    - le passé avec Kimia
-    - Paris est toujours sans K
-
 
 Deux histoires développe dans deux temps différents dans _Désorientale_ de 
 Négar Djavadi. Dans le présant, Kimia Sadr tente de concevoir un enfant avec 
 l'aide indifférente de l'établissement médical français alors que elle 
 nous raconte l'autre histoire de comment sa famille Iranienne arrive à 
 habiter à Paris. Juste avant que le passé n'atteins le présent, on apprend
-du meurtre du père de Kimia par des Iraniens aui travaillent par le régime
+du meurtre du père de Kimia, Darius, par des Iraniens aui travaillent par le régime
 Khomeiny. Ce chapitre finit avec un passage qui se lit comme un poème et
 explique beaucoup de l'état présent de la narratrice :
 
@@ -37,14 +31,38 @@ explique beaucoup de l'état présent de la narratrice :
 > Des années de noir.
 
 Bien que le passage soit touchant, le pouvoir est perdu parce on n'a pas
-vu Kimia avec sa famille à Paris. On suit les prémières journées Parisiennes 
+vu Kimia avec sa famille à Paris. On suit les premières journées Parisiennes 
 de la famille, mais avec la pérspective de la mère de Kimia et sa rapport 
 avec son père. Les mots rares qu'on lit sur l'enfance de Kimia ne s'agissent 
 pas de son désir de faire des choses à l'iranien avec son père. On entend
-bien, grâce à l'histoire des trois générations des Sadr est son fuit de 
+bien, grâce à l'histoire des trois générations des Sadr est sa fuite de 
 l'Iran pour être opposants au Shah et au Khomeiny, mais ce désir d'avoir des
 choses Iraniens typiques nous manque.
 
+Les premiers deux tiers du livre sont belles. La conte de la famille en
+Iran commence comme une fable racontée par une mère à sa fille et par
+elle à la sienne. Tandis que les générations passent, l'information devient
+plus précise. Quand on atteint les parents de Kimia, le narratif se
+concentre et le lecteur gagne plus de pérspective. Kimia a deux soeurs, et
+son père veut un fils, mais en revanche, arrive Kimia. Le père traite sa
+fille comme garçon, mais on ne voit pas plus que ce fait de le rapport entre
+les deux.  La père fait des actes de résistance contre les deux régimes en 
+écrivant des articles. En l'arrivée de Khomeiny, il faut que la famille 
+quittent le pays. La France est difficile pour les Sadr, mais rapidemente
+Kimia est adulte et on a raté elle avec Darius et des scènes.
 
-la fin: Mais il reste toujours le racisme qui est rassenti par Kimia. Je
-ne sais pais faire le cironcflex sur le "a" de son prénom.
+Et pendant tout, Kimia reste dans la salle d'attente 
+avant un rendez-vous pour une insémination artificielle. Les choses se 
+passent lentement et on apprend comment elle a utilisé un homme dans
+elle a utilisé un homme dans la rôle de son futur-mari parce que elle 
+a une copine. La conte du passé retrouve son centre avec Kimia comme
+un adolescent et pus un jeune adulte, toujours une rebelle qui change
+de pays vers Bruxelles, Amsterdam, Berlin, Londres. Ca semble qu'elle
+n'a pas trop de contacte familiale et qu'elle est plus heureuse
+loin de la France où elle experimente plus de racisme que à l'étranger.
+Mais on ne voit pas comment la France, le pays de l'espoire vu 
+de l'Iran, deviens si hostile à Kimia, on voit seulement qu'elle a
+ressenti le besoin de le quitter. On entend comment sont les choses, 
+mais le lecteur n'est pas montré les difficultés auprès d'elle.
+
+.... et je peux finir cet essei comment ? 
