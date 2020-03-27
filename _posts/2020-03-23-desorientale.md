@@ -2,7 +2,7 @@
 layout: post
 title: Désorientale
 categories: french
-tags: [critique, draft]
+tags: critique
 ---
 
 ## Désorientale
@@ -30,7 +30,7 @@ explique beaucoup de l'état présent de la narratrice :
 > Juste ces ciseaux qui brillent dans le noir.  
 > Des années de noir.
 
-Bien que le passage soit touchant, le pouvoir est perdu parce on n'a pas
+Bien que le passage soit touchant, le pouvoir est perdu parce qu'on n'a pas
 vu Kimia avec sa famille à Paris. On suit les premières journées Parisiennes 
 de la famille, mais avec la pérspective de la mère de Kimia et sa rapport 
 avec son père. Les mots rares qu'on lit sur l'enfance de Kimia ne s'agissent 
@@ -49,12 +49,12 @@ fille comme garçon, mais on ne voit pas plus que ce fait de le rapport entre
 les deux.  La père fait des actes de résistance contre les deux régimes en 
 écrivant des articles. En l'arrivée de Khomeiny, il faut que la famille 
 quittent le pays. La France est difficile pour les Sadr, mais rapidemente
-Kimia est adulte et on a raté elle avec Darius et des scènes.
+Kimia est adulte et on a raté elle avec Darius.
 
 Et pendant tout, Kimia reste dans la salle d'attente 
 avant un rendez-vous pour une insémination artificielle. Les choses se 
 passent lentement et on apprend comment elle a utilisé un homme dans
-elle a utilisé un homme dans la rôle de son futur-mari parce que elle 
+elle a utilisé un homme dans la rôle de son futur-mari parce qu'elle 
 a une copine. La conte du passé retrouve son centre avec Kimia comme
 un adolescent et pus un jeune adulte, toujours une rebelle qui change
 de pays vers Bruxelles, Amsterdam, Berlin, Londres. Ca semble qu'elle
@@ -62,7 +62,13 @@ n'a pas trop de contacte familiale et qu'elle est plus heureuse
 loin de la France où elle experimente plus de racisme que à l'étranger.
 Mais on ne voit pas comment la France, le pays de l'espoire vu 
 de l'Iran, deviens si hostile à Kimia, on voit seulement qu'elle a
-ressenti le besoin de le quitter. On entend comment sont les choses, 
-mais le lecteur n'est pas montré les difficultés auprès d'elle.
+ressenti le besoin de le quitter. 
 
-.... et je peux finir cet essei comment ? 
+La seconde partie du conte relie trop dans nos connaisances, qu'on sait
+déjà que la vie est difficile en étant étrangère, mais sans voir plus
+de ces difficultés, le livre perdre le pouvoir qu'il a gagné dans la
+première partie. La specificité est perdue, est les lecteurs s'ennuient.
+
+
+
+
