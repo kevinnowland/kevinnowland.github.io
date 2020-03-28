@@ -1,6 +1,7 @@
 ---
 layout: code-post
 categories: code
+tags: misc
 ---
 
 # Sample Notebook Post
