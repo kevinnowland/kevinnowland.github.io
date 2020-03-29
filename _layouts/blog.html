@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<h1 class="inline" style="display:inline-block;"> 
+<!-- blog title page style -->
+<link rel="stylesheet" type="text/css" href="/assets/css/blog.css">
+
+<h1 class="blogtitle">
   {% if page.title == "french" %}
     Français
   {% else %}
@@ -10,21 +13,34 @@ layout: default
   {% endif %}
 </h1>
 
+<nav class="blogtags">
+
+  <a href="{{ page.permalink }}">All</a>
+
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+    {% if tag != "draft" %}
+      {% assign posts = tag[1] | where: "categories", page.title | sort %}
+      {% if posts != empty %}
+        <a href="#{{ tag[0]  }}"> {{ tag[0] | capitalize }} </a>
+      {% endif %}<!-- posts != empty -->
+    {% endif %}<!-- tag != "draft" -->
+  {% endfor %}<!-- tag in sorted_tags -->
+
+
+</nav>
+
 
 {{ content }}
 
 
 {% assign sorted_tags = site.tags | sort %}
-
 {% for tag in sorted_tags %}
-
   {% if tag != "draft" %}
-
     {% assign posts = tag[1] | where: "categories", page.title | sort %}
-
     {% if posts != empty %}
-      
-      <h2> {{ tag[0] | capitalize }} </h2>
+
+    <h2 id="{{ tag[0] }}"> {{ tag[0] | capitalize }} </h2>
 
       <ul>
         {% for p in posts | sort %}
@@ -37,9 +53,7 @@ layout: default
       </ul>
 
     {% endif %}<!-- posts != empty -->
-
   {% endif %}<!-- tag != "draft" -->
-
-
 {% endfor %}<!-- tag in sorted_tags -->
+
 
