@@ -1,7 +1,7 @@
 ---
 layout: code-post
 categories: code
-tags: misc
+tags: demo
 ---
 
 # Sample Notebook Post

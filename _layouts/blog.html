@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<h1 class="inline" style="display:inline-block;"> 
+  {% if page.title == "french" %}
+    Français
+  {% else %}
+    {{ page.title | capitalize }}
+  {% endif %}
+</h1>
+
+
+{{ content }}
+
+
+{% assign sorted_tags = site.tags | sort %}
+
+{% for tag in sorted_tags %}
+
+  {% if tag != "draft" %}
+
+    {% assign posts = tag[1] | where: "categories", page.title | sort %}
+
+    {% if posts != empty %}
+      
+      <h2> {{ tag[0] | capitalize }} </h2>
+
+      <ul>
+        {% for p in posts | sort %}
+          <li>
+            <a href="{{ p.url }}">
+              {{ p.date | date_to_string }} - {{ p.title }}
+            </a>
+          </li>
+        {% endfor %} <!-- p in posts -->
+      </ul>
+
+    {% endif %}<!-- posts != empty -->
+
+  {% endif %}<!-- tag != "draft" -->
+
+
+{% endfor %}<!-- tag in sorted_tags -->
+
