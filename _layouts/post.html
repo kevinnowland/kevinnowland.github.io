@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h1 class="inline" style="display:inline-block;"> 
-  {{ page.title }}
+  {{ page.title | capitalize }}
 </h1>
 {% if page.tags contains "draft" %}
   <span><i style="text-size:small;">DRAFT</i> </span>

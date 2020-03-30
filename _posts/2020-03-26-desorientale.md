@@ -5,9 +5,6 @@ categories: french
 tags: critique
 ---
 
-## Désorientale
-
-
 Deux histoires développe dans deux temps différents dans _Désorientale_ de 
 Négar Djavadi. Dans le présant, Kimia Sadr tente de concevoir un enfant avec 
 l'aide indifférente de l'établissement médical français alors que elle 

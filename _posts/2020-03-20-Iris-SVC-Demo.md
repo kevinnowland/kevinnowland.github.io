@@ -1,10 +1,10 @@
 ---
 layout: code-post
 categories: code
+title: sample notebook post
 tags: demo
 ---
 
-# Sample Notebook Post
 
 This is a first post that was created from a Jupyter notebook.
 
