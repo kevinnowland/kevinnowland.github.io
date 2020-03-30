@@ -13,38 +13,49 @@ layout: default
   {% endif %}
 </h1>
 
-<nav class="blogtags">
+<span class="blogtags">
 
-  <a href="{{ page.permalink }}">All</a>
+  <button onClick="displayPosts('all')">All</button>
 
   {% assign sorted_tags = site.tags | sort %}
   {% for tag in sorted_tags %}
     {% if tag != "draft" %}
       {% assign posts = tag[1] | where: "categories", page.title | sort %}
       {% if posts != empty %}
-        <a href="#{{ tag[0]  }}"> {{ tag[0] | capitalize }} </a>
+      <button onClick="displayPosts('{{ tag[0] }}')">
+          {{ tag[0] | capitalize }}
+        </button>
       {% endif %}<!-- posts != empty -->
     {% endif %}<!-- tag != "draft" -->
   {% endfor %}<!-- tag in sorted_tags -->
 
 
-</nav>
+</span>
 
 
 {{ content }}
 
-
 {% assign sorted_tags = site.tags | sort %}
 {% for tag in sorted_tags %}
   {% if tag != "draft" %}
-    {% assign posts = tag[1] | where: "categories", page.title | sort %}
+    {% assign posts = tag[1] | where: "categories", page.title | sort | reverse %}
     {% if posts != empty %}
 
-    <h2 id="{{ tag[0] }}"> {{ tag[0] | capitalize }} </h2>
+    <div class="blogDiv" id="{{ tag[0] }}" style="display:block;">
+
+    <h2> {{ tag[0] | capitalize }} </h2>
+
+    {% assign i = 0 %}
 
       <ul>
-        {% for p in posts | sort %}
-          <li>
+        {% for p in posts %}
+
+          {% assign i = i | plus: 1 %}
+          {% if i > 5 %}
+            <li class="vanishing-li" style="display:none;">
+          {% else %}
+            <li>
+          {% endif %}
             <a href="{{ p.url }}">
               {{ p.date | date_to_string }} - {{ p.title }}
             </a>
@@ -52,8 +63,44 @@ layout: default
         {% endfor %} <!-- p in posts -->
       </ul>
 
+    </div><!-- class blogDiv -->
+
     {% endif %}<!-- posts != empty -->
   {% endif %}<!-- tag != "draft" -->
 {% endfor %}<!-- tag in sorted_tags -->
 
+<div id="hello"></div>
 
+<script>
+  function displayPosts(activate) {
+
+    var divs = document.getElementsByClassName("blogDiv");
+    var vanishingLIs = document.getElementsByClassName("vanishing-li");
+
+    if (activate == "all") {
+
+      for (var i=0; i < divs.length; i++) {
+        divs[i].style.display = "block";
+      }
+
+      for (var i=0; i < vanishingLIs.length; i++) {
+        vanishingLIs[i].style.display = "none";
+      }
+
+    } else {
+
+      for (var i=0; i< divs.length; i++) {
+        if (divs[i].id === activate) {
+          divs[i].style.display = "block";
+        } else {
+          divs[i].style.display = "none";
+        }
+      }
+
+      for (var i=0; i < vanishingLIs.length; i++) {
+        vanishingLIs[i].style.display = "list-item";
+      }
+
+    }
+  }
+</script><!-- displayPosts script-->
