@@ -22,11 +22,6 @@ This website exists as a work in progress. The differences between what
 exists on my laptop and what you see here should be minimal. This means
 that some posts will be drafts, although I'll tag them as such.
 
-As I am writing this on 23 March 2020, this work in progress design is by
-necessity given that I want to have this website available and I only began
-writing it last week.
-
-
 
 ## Further behind the curtain
 
