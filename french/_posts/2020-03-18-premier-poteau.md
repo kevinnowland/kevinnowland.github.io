@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Premier Poteau
-categories: french
 tag: misc
 ---
 

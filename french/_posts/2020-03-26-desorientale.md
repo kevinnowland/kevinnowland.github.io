@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Désorientale
-categories: french
 tags: critique
 ---
 

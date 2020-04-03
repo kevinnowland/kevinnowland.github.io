@@ -1,6 +1,5 @@
 ---
 layout: code-post
-categories: code
 title: sample notebook post
 tags: demo
 ---

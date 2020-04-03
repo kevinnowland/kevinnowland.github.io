@@ -11,7 +11,7 @@ and categories (code). Then conver to markdown with
 ```bash
 cd _notebooks/
 jupyter nbconvert --to markdown --no-prompt notebook.ipynb 
-mv notebook.md ../_posts/
+mv notebook.md ../code/_posts/
 ```
 
 If the notebook has images move them to the images folder.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Un Village Français 1
-categories: french
 tags: critique
 ---
 
