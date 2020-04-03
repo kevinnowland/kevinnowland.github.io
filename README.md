@@ -45,3 +45,38 @@ To get a list of theme names,
 ```bash
 rougify help style
 ```
+
+
+
+## Ruby stuff
+
+
+I am not a ruby programmer, I am leaving some notes to 
+myself that document how I got jekyll setup on my mac
+when I had been doing things on ubuntu.
+
+Assuming you have `rbenv` installed, make sure ruby 2.7.0.
+I had to update the available versions with (on mac, at least)
+```bash
+brew upgrade ruby-build
+```
+On my ubuntu machine I'm not sure what would be required. I then ran
+```bash
+rbenv install 2.7.0
+rbenv global 2.7.0
+```
+to install and make this version the global version. The next
+step was to install the proper version of bundler, which is 2.1.4 (as
+of this writing, this is the stable version).
+```bash
+gem install bundler 
+```
+Then the jekyll server got started with
+```bash
+bundle exec jekyll serve
+```
+In this repository, I ran
+```bash
+bundler install
+```
+because it knows how to use the Gemfile. I think.
