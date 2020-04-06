@@ -6,22 +6,22 @@ Going to make an attempt at hosting a website on github.
 
 
 The zeroth step is to have a notebook with an appropriate layout
-and categories (code). Then conver to markdown with
+Then convert to markdown with
 
 ```bash
-cd _notebooks/
+cd code/_notebooks/
 jupyter nbconvert --to markdown --no-prompt notebook.ipynb 
-mv notebook.md ../code/_posts/
+mv notebook.md ../_posts/YYYY-MM-DD-notebook.md
 ```
 
 If the notebook has images move them to the images folder.
 ```bash
-mv notebook_files/ ../assets/images/
+mv notebook_files/ ../../assets/images/
 ```
 Then you have to rename where the images are coming from. So
 inside the markdwn file, run a command like
 ```
-% s/notebook_files/\/assets\/images\/notebook_files/g
+% s/notebook_files//\/assets\/images\/notebook_files/g
 ```
 
 Finally, if you did `df.head()` anywhere, clear the border
