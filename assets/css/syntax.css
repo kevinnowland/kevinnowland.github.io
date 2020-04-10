@@ -1,5 +1,27 @@
 div.language-python {
     font-size: 1.2em;
+    margin:0px;
+    padding:0px;
+}
+
+.highlight pre {
+    padding:0px;
+    margin:0px;
+}
+
+div.highlight {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+div[class=highlighter-rouge] .highlight {
+    background-color:white;
+    border:none;
 }
 
 .highlight table td { padding: 5px; }
