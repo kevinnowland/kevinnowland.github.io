@@ -46,6 +46,9 @@ To get a list of theme names,
 rougify help style
 ```
 
+I've since edited `syntax.css` to make it look more like a jupyter notebook
+output.
+
 
 
 ## Ruby stuff
