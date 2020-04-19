@@ -357,7 +357,9 @@ plt.show()
 
 Now let's change the hidden lyaer activation function to be the sigmoid
 function 
+
 $$ f(x) = \frac{1}{1 + \exp(-x)}. $$
+
 The output layer will activate using the sign function. The sigmoid function is
 a differentiable approxmation to the binary step function which is 0 for
 all negative numbers and 1 otherwise.
@@ -415,10 +417,14 @@ With that taken care of, let's suppose that $|w_1| < |w_2|$ and $w_1 > 0$ while
 $w_2 < 0$, which is the case for the picture generated above.
 As a reminder, we are looking at the sign of $w_1 o_1 + w_2 o_2$. The dividing line
 is $w_1 o_1 + w_2 o_2 = 0$. We can rewrite this as
+
 $$ \left|\frac{w_2}{w_1}\right| = \frac{o_1}{o_2}. $$
+
 Let's like $k = |w_2/w_1| > 1$. Plugging in $o_i = (1 + \exp(-a_i))^{-1}$
 and solving for $e^{-a_2}$, one finds that 
+
 $$ e^{-a_2} = ke^{-a_1} + (k-1), $$
+
 such that in $(e^{-a_1}, e^{-a_2})$-coordinates, we have a line with slope
 $k>1$ and intercept $k-1>0$. 
 
@@ -459,12 +465,15 @@ below the horizontal asymptote.
 
 What about the behavior as $a_1$ tends to $-\infty$? If we rewrite the 
 linear equation as
+
 $$ \frac{e^{-a_2}}{e^{-a_1}} = k + \frac{k-1}{e^{-a_1}}, $$
+
 we see that $e^{-a_2} \approx ke^{-a_1}$, such that
 $a_2 \approx a_1 - \log k$.
 
 Therefore our first approximation of the boundary between the
 positive and negative regions can be described by 
+
 $$
     a_2 = 
     \begin{cases}
@@ -472,16 +481,21 @@ $$
         -\log(k-1) & a_1 \geq \log\left(\frac{k}{k-1}\right).
     \end{cases}
 $$
+
 Above this line, the output of the neural net will be $-1$, while below it
 the ouput will (mostly) be $+1$.
 
 Now, for our situation we have
+
 $$ a_1 \approx 0.934x_1 + 0.094 x_2 + 0.945, \quad  a_2 \approx 0.429x_1 + 0.395 x_2 -0.567, $$
+
 with $k \approx 1.036$
 Such that the lines we care about in $(x_1, x_2)$-coordinates are given by are
+
 $$
     x_2 \approx 1.675 x_1 + 4.907,\quad x_2 \approx -1.086 x_1 + 9.790.
 $$
+
 Adding these lines to the plot we see that for a first approximation this is
 not too terrible. The end behavior is well-captured, but the the meeting
 between the two lines is off, as expected.
@@ -540,12 +554,16 @@ $$
     &\Rightarrow\quad k = \log\left(\frac{k}{k-1}\right).
 \end{align*}
 $$
+
 Therefore the point on the curve is $(\log\frac{k}{k-1},\log\frac{1}{2(k-1)})$. The
 tangent line is given by
+
 $$
     a_2 = \frac{1}{2}a_1 + \frac{1}{2}\log\left(\frac{1}{4k(k-1)}\right).
 $$
+
 Tranlsating to $(x_1, x_2)$-coordinates gives
+
 $$
     x_2 \approx 0.107 x_1 + 5.689.
 $$
@@ -600,12 +618,16 @@ occurs at $a_2 = \log\frac{k}{k-1}$, and we would use the same tangent
 line we found above.
 
 Note that the second derivative is 
+
 $$
     \frac{d^2}{da_1^2}\left\{-\log(ke^{-a_1}+k-1)\right\} = -\frac{(k-1)ke^x}{((k-1)e^x + k)^2}
+
 $$
-sucht that the maximum curvature is $1/4$. Note that this is independent of $k$.
+
+such that the maximum curvature is $1/4$. Note that this is independent of $k$.
 
 In fact, let's write
+
 $$
 \begin{align*}
     a_2 &= -\log(k e^{-a_2} + k-1) \\
@@ -613,6 +635,7 @@ $$
     &= -\log(e^{-a_2 - \log\frac{k-1}{k}} + 1) - \log(k-1).
 \end{align*}
 $$
+
 Therefore the parameter $k$ takes the curve $y = -\log(e^{-x}+1)$ and shifts the $x$
 coordinated by $x\mapsto x + \log\frac{k}{k-1}$ then shifts the function down by
 $-\log(k-1)$. The actual shape of the curve does not change based on $k$, just its
