@@ -152,7 +152,7 @@ def sigma_constant(x):
     of nx1 array, and returns 1 to the last term"""
     o_1 = x.copy()
     o_1[:-1,] = np.sign(o_1[:-1,])
-    o_1[-1,] = o_1[-1,] + 1
+    o_1[-1,] =  1
     return o_1
 
 
