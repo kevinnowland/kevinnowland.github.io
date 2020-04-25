@@ -1,0 +1,109 @@
+---
+layout: default
+---
+
+<!-- blog title page style -->
+<link rel="stylesheet" type="text/css" href="/assets/css/blog.css">
+
+<h1 class="blogtitle">
+    {{ page.title | capitalize }}
+</h1>
+
+<span class="blogtags">
+
+  <button onClick="displayPosts('all')">All</button>
+
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+    {% if tag != "draft" %}
+      {% assign posts = tag[1] | where: "categories", page.title | sort %}
+      {% if posts != empty %}
+      <button onClick="displayPosts('{{ tag[0] }}')">
+          {{ tag[0] | capitalize }}
+        </button>
+      {% endif %}<!-- posts != empty -->
+    {% endif %}<!-- tag != "draft" -->
+  {% endfor %}<!-- tag in sorted_tags -->
+
+
+</span>
+
+
+{{ content }}
+
+<div class = "blogDiv" id="neural nets" style="display:block;">
+    <h2> Neural nets </h2>
+    {% assign i = 0 %}
+    {% for post in site.posts %}
+        {% if post.categories contains "code" %}
+        {% if post.tags contains "neural nets" %}
+            {% assign i = i | plus: 1 %}
+            {% if i > 5 %}
+                <li class="vanishing-li" style="display:none;">
+            {% else %}
+                <li>
+            {% endif %}
+                <a href="{{ post.url }}">
+                  {{ post.date | date_to_string }} - {{ post.title }}
+                </a>
+              </li>
+        {% endif %}
+        {% endif %}
+    {% endfor %}
+</div> <!-- neural nets -->
+
+<div class = "blogDiv" id="demo" style="display:block;">
+    <h2> Demo </h2>
+    {% assign i = 0 %}
+    {% for post in site.posts %}
+        {% if post.categories contains "code" %}
+        {% if post.tags contains "demo" %}
+            {% assign i = i | plus: 1 %}
+            {% if i > 5 %}
+                <li class="vanishing-li" style="display:none;">
+            {% else %}
+                <li>
+            {% endif %}
+                <a href="{{ post.url }}">
+                  {{ post.date | date_to_string }} - {{ post.title }}
+                </a>
+              </li>
+        {% endif %}
+        {% endif %}
+    {% endfor %}
+</div> <!-- neural nets -->
+
+
+<script>
+  function displayPosts(activate) {
+
+    var divs = document.getElementsByClassName("blogDiv");
+    var vanishingLIs = document.getElementsByClassName("vanishing-li");
+
+    if (activate == "all") {
+
+      for (var i=0; i < divs.length; i++) {
+        divs[i].style.display = "block";
+      }
+
+      for (var i=0; i < vanishingLIs.length; i++) {
+        vanishingLIs[i].style.display = "none";
+      }
+
+    } else {
+
+      for (var i=0; i< divs.length; i++) {
+        if (divs[i].id === activate) {
+          divs[i].style.display = "block";
+        } else {
+          divs[i].style.display = "none";
+        }
+      }
+
+      for (var i=0; i < vanishingLIs.length; i++) {
+        vanishingLIs[i].style.display = "list-item";
+      }
+
+    }
+  }
+</script><!-- displayPosts script-->
