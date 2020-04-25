@@ -32,44 +32,32 @@ layout: default
 
 </span>
 
-
 {{ content }}
 
-{% assign sorted_tags = site.tags | sort %}
-{% for tag in sorted_tags %}
-  {% if tag != "draft" %}
-    {% assign posts = tag[1] | where: "categories", page.title | sort | reverse %}
-    {% if posts != empty %}
-
-    <div class="blogDiv" id="{{ tag[0] }}" style="display:block;">
-
-    <h2> {{ tag[0] | capitalize }} </h2>
-
+{% for t in page.blogtags %}
+<div class="blogDiv" id="{{ t }}" style="display:block;">
+    <h2> {{ t | capitalize }} </h2>
     {% assign i = 0 %}
+    {% for p in site.posts  %}
+        {% if p.categories contains page.title  %}
+        {% if p.tags contains t %}
+            {% assign i = i | plus: 1 %}
+            {% if i > 5 %}
+                <li class="vanishing-li" style="display:none;">
+            {% else %}
+                <li>
+            {% endif %}
+                <a href="{{ post.url }}">
+                  {{ p.date | date_to_string }} - {{ p.title }}
+                </a>
+              </li>
+        {% endif %}
+        {% endif %}
+    {% endfor %} <!-- p in site.posts -->
+</div> <!-- blogDiv --> 
+{% endfor %}<!-- t in blogtags -->
 
-      <ul>
-        {% for p in posts %}
 
-          {% assign i = i | plus: 1 %}
-          {% if i > 5 %}
-            <li class="vanishing-li" style="display:none;">
-          {% else %}
-            <li>
-          {% endif %}
-            <a href="{{ p.url }}">
-              {{ p.date | date_to_string }} - {{ p.title }}
-            </a>
-          </li>
-        {% endfor %} <!-- p in posts -->
-      </ul>
-
-    </div><!-- class blogDiv -->
-
-    {% endif %}<!-- posts != empty -->
-  {% endif %}<!-- tag != "draft" -->
-{% endfor %}<!-- tag in sorted_tags -->
-
-<div id="hello"></div>
 
 <script>
   function displayPosts(activate) {
