@@ -468,11 +468,13 @@ Therefore our first approximation of the boundary between the
 positive and negative regions can be described by 
 
 $$
+\begin{align*}
     a_2 = 
     \begin{cases*}
         a_1 - \log k & a_1 < \log\left(\frac{k}{k-1}\right), \\
         -\log(k-1) & a_1 \geq \log\left(\frac{k}{k-1}\right).
     \end{cases*}
+\end{align*}
 $$
 
 Above this line, the output of the neural net will be $-1$, while below it
@@ -691,7 +693,9 @@ transformations. The main difference is the sharp point.
 The _leaky ReLU_ is defined by
 
 $$
-    \sigma_a(x) = \begin{cases*} x & x > 0, \\ ax & x \leq 0, \end{cases*}
+\begin{align*}
+    \sigma_a(x) = \begin{cases} x & x > 0, \\ ax & x \leq 0, \end{cases}
+\end{align*}
 $$
 
 where $a$ is a (small) positive parameter, which according to First Principles (wikipedia)
@@ -700,7 +704,9 @@ The _exponential linear unit_ is a smoother version of the ReLU
 function given by 
 
 $$
-    \sigma_a(x) = \begin{cases*} x & x > 0, \\ a(e^x - 1) & x \leq 0, \end{cases*}
+\begin{align*}
+    \sigma_a(x) = \begin{cases} x & x > 0, \\ a(e^x - 1) & x \leq 0, \end{cases}
+\end{align*}
 $$
 
 where $a>0$ is again a tunable parameter.
