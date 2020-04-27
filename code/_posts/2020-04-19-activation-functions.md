@@ -470,10 +470,10 @@ positive and negative regions can be described by
 $$
 \begin{align*}
     a_2 = 
-    \begin{cases*}
+    \begin{cases}
         a_1 - \log k & a_1 < \log\left(\frac{k}{k-1}\right), \\
         -\log(k-1) & a_1 \geq \log\left(\frac{k}{k-1}\right).
-    \end{cases*}
+    \end{cases}
 \end{align*}
 $$
 
