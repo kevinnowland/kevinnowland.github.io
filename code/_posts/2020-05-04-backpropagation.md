@@ -3635,6 +3635,8 @@ my experience, as most things blew up without finding a good regime.
 In this sense it seems that intelligent neetwork design and luck are
 needed to train well. Given how fertile the field is, more thoughtful
 network design must be winning in the end (I'm not that much a skeptic).
+I even traded out the hinge loss for the $\ell^2$ loss, but this did
+not improve things too much overall.
 
 ```python
 input_layer = Layer(3, lambda x: x, None, True)
