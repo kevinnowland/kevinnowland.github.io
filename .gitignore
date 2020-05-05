@@ -5,3 +5,4 @@ Gemfile.lock
 .jekyll-cache/
 _notebooks/.ipynb_checkpoints/
 code/_notebooks/.ipynb_checkpoints/
+*swp
