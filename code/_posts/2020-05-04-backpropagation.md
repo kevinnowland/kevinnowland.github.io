@@ -3678,17 +3678,17 @@ plt.show()
 
 ## Backpropagation Details
 
-Let's recall the setup. We have a layer $V_t$ of $n_t$ neurons. The
-input to $V_t$ is $a_t$ and the output is $o_t = \sigma_t(a_t)$. 
-Also, $a_t = W^{t-1}o_{t-1}$, and $W^{t-1}$ is a matrix of size
-$n_t\times n_{t-1}$. The activation function $s_t$ will act
-componentwise on the $n_t$-dimensional vector $a_t$. $W^0$ is the
+Let's recall the setup. We have a layer $V\_t$ of $n\_t$ neurons. The
+input to $V\_t$ is $a\_t$ and the output is $o\_t = \sigma\_t(a\_t)$. 
+Also, $a\_t = W^{t-1}o\_{t-1}$, and $W^{t-1}$ is a matrix of size
+$n\_t\times n\_{t-1}$. The activation function $s\_t$ will act
+componentwise on the $n\_t$-dimensional vector $a\_t$. $W^0$ is the
 weights from the input layer, and $W^T$ is the weights from
 the last hidden layer to the output layer, which consists of a single neuron
 that has the identity function as its activator.
 
 Let's examine how (the positive part of) the loss $\ell(x, y, W)=1-y f(x, W)$ 
-depends on $w^T_k$, a weight from the last hidden layer to the output
+depends on $w^T\_k$, a weight from the last hidden layer to the output
 layer. We calculate
 
 $$
@@ -3699,9 +3699,9 @@ $$
 \end{align*}
 $$
 
-We get the $o_{T-1, k}$ term because $a_{T+1}=W^To_T = \sum_i w^T_i o_{T, i}$.
-Now let's consider the weight $w^T_{k, n}$ from neuron $n$ in $V_{T-1}$ 
-to neuron $k$ in $V_T$. For this partial derivative we first find that
+We get the $o\_{T-1, k}$ term because $a\_{T+1}=W^To\_T = \sum\_i w^T\_i o\_{T, i}$.
+Now let's consider the weight $w^T\_{k, n}$ from neuron $n$ in $V\_{T-1}$ 
+to neuron $k$ in $V\_T$. For this partial derivative we first find that
 
 $$
 \begin{align*}
@@ -3711,9 +3711,9 @@ $$
 \end{align*}
 $$
 
-Stopping for a moment to consider this, $w^{T-1}_{k, n}$ only feeds neuron $k$ in $V_T$,
-so only the $k$th component of $\sigma_T$ is affected. Since the output layer only has one neuron,
-the only weight from this neuron is $w^T_k$, so we end up with
+Stopping for a moment to consider this, $w^{T-1}\_{k, n}$ only feeds neuron $k$ in $V\_T$,
+so only the $k$th component of $\sigma\_T$ is affected. Since the output layer only has one neuron,
+the only weight from this neuron is $w^T\_k$, so we end up with
 
 $$
 \begin{align*}
@@ -3722,7 +3722,7 @@ $$
 \end{align*}
 $$
 
-Note that we've repeated $-y\sigma_{T+1}'(a_{T+1})$. Let's get a little ahead 
+Note that we've repeated $-y\sigma\_{T+1}'(a\_{T+1})$. Let's get a little ahead 
 of ourselves define
 
 $$
@@ -3738,15 +3738,15 @@ $$
 $$
 
 This already shows how backpropogation might work. A first forward pass through the neural
-net is necessary to calculate the $a_i$ and $o_i$, while on the backward pass we
+net is necessary to calculate the $a\_i$ and $o\_i$, while on the backward pass we
 calculate the derivates one layer at a time, from output to input, storing the $\delta$
 values along the way to help calculate successive derivatives. However, since the output
 layer only has one neuron, it's a little bit cheating to say that we are done, so
 let's calculate a derivative with respect to 
-$w^{T-2}_{n, m}$ 
+$w^{T-2}\_{n, m}$ 
 to get the full scope of
-the behavior. What changes here is that while $w^{T-2}_{n, m}$ only feeds neuron $n$
-in $V_{T-1}$, but neuron $n$ in $V_{T-1}$ feeds every neuron in $V_T$, of which there are
+the behavior. What changes here is that while $w^{T-2}\_{n, m}$ only feeds neuron $n$
+in $V\_{T-1}$, but neuron $n$ in $V\_{T-1}$ feeds every neuron in $V\_T$, of which there are
 multiple. So now the calculate looks like
 
 $$
@@ -3781,36 +3781,36 @@ $$
 
 where ${}^TA$ is the transpose of $A$ and $(x*y)$ is the elementwise product. Looking
 at the structure of the recursion, it becomes clear what each component is. 
-The $\delta_{t+1}$ vectors hold the information for all derivatives beyond 
-(closer to the output) layer $t+1$. Then $\sigma'_{t+1}$ encodes the derivatives at
+The $\delta\_{t+1}$ vectors hold the information for all derivatives beyond 
+(closer to the output) layer $t+1$. Then $\sigma'\_{t+1}$ encodes the derivatives at
 layer $t+1$. Since the activation functions at a layer act diagonally (for now), 
 you can take the elementwise product, as
 you would get a diagonal matrix for the Jacobian of activation functions.
-Then, the input $a_{t+1}$ that feeds into layer $t+1$ depends has
-the form $W^to_t$. If you want to go another layer down the network before taking
+Then, the input $a\_{t+1}$ that feeds into layer $t+1$ depends has
+the form $W^to\_t$. If you want to go another layer down the network before taking
 a derivative with respcet to the weights at a lower layer, you have to take the
-derivative with respect to $o_t$ and you end up with a $W^t$ term. Since you are
-going from a layer that has size $n_{t+1}$ to a layer of size $n_t$ you need
-a matrix of sixe $n_t\times n_{t+1}$, which is why you get ${}^TW_t$. 
+derivative with respect to $o\_t$ and you end up with a $W^t$ term. Since you are
+going from a layer that has size $n\_{t+1}$ to a layer of size $n\_t$ you need
+a matrix of sixe $n\_t\times n\_{t+1}$, which is why you get ${}^TW\_t$. 
 Similarly, if you are at the layer you want and are taking the derivative with
-respect to $W^t$, then you end up with ${}^To_t$ instead.
+respect to $W^t$, then you end up with ${}^To\_t$ instead.
 
 In other words, we are taking derivatives of the loss due to layer
-$t+1$, which we can denote $\ell_{t+1}$ which takes in $\sigma_{t+1}$
-which in turn has $W^to_t$ as its input. If we are goign further
-down the chain through $\ell_t$ we need a derivative with respect to
-$o_t$, if not we take a derivative with respect to $W^t$.
-So we have decomposed the loss $\ell$ as $\ell = \ell_{T+1}\circ\ell_T\circ\cdots$
+$t+1$, which we can denote $\ell\_{t+1}$ which takes in $\sigma\_{t+1}$
+which in turn has $W^to\_t$ as its input. If we are goign further
+down the chain through $\ell\_t$ we need a derivative with respect to
+$o\_t$, if not we take a derivative with respect to $W^t$.
+So we have decomposed the loss $\ell$ as $\ell = \ell\_{T+1}\circ\ell\_T\circ\cdots$
 where each step looks like
 $
- \ell_{t+1}(\sigma_{t+1}(W^to_t)).
+ \ell\_{t+1}(\sigma\_{t+1}(W^to\_t)).
 $
 
 The recursive formula also tells us how we would need to edit backpropagation
 if we change the form of the neural net. If the mapping between spaces is no
-longer linear, than the $o_t$ and $W^t$ terms would change depending on the
+longer linear, than the $o\_t$ and $W^t$ terms would change depending on the
 function used. If the activation functions were no longer elementwise,
-then instead of $\sigma'_{t+1}$ we would need a full Jacobian matrix.
+then instead of $\sigma'\_{t+1}$ we would need a full Jacobian matrix.
 This procedure also begs the question of what should be done if the 
 activation functions are not differentiable / do not have a well-defined
 subgradients. Although practically, piece-wise differentiability should
