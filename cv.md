@@ -27,17 +27,20 @@ kevin.nowland@gmail.com
 #### Data Scientist 
 
 - Brought to production multiple versions of algorithm
-used to determine approval likelihood for prior authorizations which
-helped drive adoption of company software by national pharmacy
-chain resulting in increased revenue of $XX million per year
-- Architected productionization process for data science containers to
-run in Azure Kubernetes Service
+used to determine approval likelihood for prior authorizations
+which led to on-going pilot program with regional pharmacy chain.
 - Implemented algorithm in SQL to determine therapeutic alternatives for
 prescribed medications based on drug switching behavior observed in 
-pharmacies. Software using this algorithm was integrated into XX pharmacies
-and YY electronic health records.
-- Re-wrote SQL backend for generating data for XGBoost model
-- Started company's data science journal club
+pharmacies. Pilot anticipated with pharmacy software system vendor
+in summer 2020.
+- Architected productionization process for containerized data science 
+APIs to run in Azure Kubernetes Service.
+- Re-wrote SQL backend for generating data for XGBoost model predicting
+whether a prior authorization would be needed before a prescription was
+sent to the pharmacy.
+- Supervised time series forecasting project which was integrated into
+company-wide volume and revenue projections.
+- Started company's data science journal club.
 
 #### Intern
 
