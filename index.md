@@ -58,7 +58,6 @@ changes on separate branches.
 ### Design choices
 
 
-As with all personal websites, this site is a public mask over a private life.
 What's here is what I want to show publicly, but I hope it doesn't come off
 too much as a technical portfolio, even if that is partly its purpose.
 I mostly hope to use this site to encourage my own growth. If I am not 
