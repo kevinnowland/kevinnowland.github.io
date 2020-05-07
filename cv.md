@@ -40,7 +40,7 @@ whether a prior authorization would be needed before a prescription was
 sent to the pharmacy.
 - Supervised time series forecasting project which was integrated into
 company-wide volume and revenue projections.
-- Started company's data science journal club.
+- Started company data science journal club.
 
 #### Intern
 
