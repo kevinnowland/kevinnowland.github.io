@@ -26,13 +26,18 @@ kevin.nowland@gmail.com
 
 #### Data Scientist 
 
-- Designed bayesian algorithm, implemented in SQL, to estimate favorable
-percentage for prior authorizations
+- Brought to production multiple versions of algorithm
+used to determine approval likelihood for prior authorizations which
+helped drive adoption of company software by national pharmacy
+chain resulting in increased revenue of $XX million per year
 - Architected productionization process for data science containers to
 run in Azure Kubernetes Service
-- Implemented algorithm to determine therapeutic alternativees for
-prescribed medications based on pharmacist behavior
+- Implemented algorithm in SQL to determine therapeutic alternatives for
+prescribed medications based on drug switching behavior observed in 
+pharmacies. Software using this algorithm was integrated into XX pharmacies
+and YY electronic health records.
 - Re-wrote SQL backend for generating data for XGBoost model
+- Started company's data science journal club
 
 #### Intern
 
@@ -54,29 +59,34 @@ for introductory calculus courses
 
 #### Undergraduate Summer Research Program
 
-- Analyzed field experiments to determine theoretical mean and variance
-- Provided linear estimates of forest cover from LiDAR shuttle data
+- Determined theoretical mean and variance of fieldwork estimates
+- Provided linear estimates of forest cover from LiDAR and shuttle data
 
 ---
 
 ## Programming
 
-Python, SQL, Docker, Terraform, git, LaTeX, Scala, C++, Java, Fortran
+- Recent experience: Python, SQL, Docker, Terraform, git, LaTeX
+- Past experience: Scala, C++, C, Java, Fortran, R
 
 ---
 
 ## Publications
 
-- $GL(3)$ baby
-- The other thing
+- Holowinsky, Roman; Nowland, Kevin; Ricotta, Guillaume; Royer, Emmanuel. 
+_On the sup-norm of $SL\_3$ Hecke–Maass cusp forms._ Publications Mathématiques de Besançon, no. 2 (2019)
+<a href="https://pmb.centre-mersenne.org/item/PMB_2019___2_53_0/">Link</a>
+- K. Aggarwal, Y. Jo, K. Nowland. _Hybrid level aspect subconvexity for $GL(2)\times GL(3)$ Rankin-Selberg
+$L$-functions._ Hardy-Ramanujan Journal, no. 41 (2019)
+<a href="https://hal.archives-ouvertes.fr/hal-01986708/">Link</a>
 
 ---
 
 ## Talks
 
-- University of Michigan Invitations to Industry Seminar
-- OSU Invitations to Industry Seminar
-- Marburg
+- University of Michigan Invitations to Industry Seminar on behalf of CoverMyMeds. April 2020.
+- OSU Invitations to Industry Seminar on behalf of CoverMyMeds. January 2019.
+- Mini-talk at Fourth Summer School on Quantum Unique Ergodicity and Harmonic Analysis. Marburg. July 2015.
 
 ---
 
