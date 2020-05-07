@@ -95,6 +95,7 @@ $L$-functions._ Hardy-Ramanujan Journal, no. 41 (2019)
 
 ## Misc
 
-- 2020 - Present: Volunteer at Riverview International Center
-- 2020 - Present: Erdos Institute Space Director
-- 2018 - Chateaubriand fellowship for semester at Université de Bordeaux
+- 2020 - Present: Volunteer at <a href="https://riverviewinternationalcenter.org">Riverview International Center</a>
+- 2020 - TA for <a href="https://erdosinstitute.org">Erdos Institute</a> data science bootcamp
+- 2018 - <a href="https://www.chateaubriand-fellowship.org/-Science-Technology-Engineering-Math-Health-.html">
+Chateaubriand fellowship</a> for semester at Université de Bordeaux (awarded 2017)
