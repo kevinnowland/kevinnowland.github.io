@@ -22,9 +22,9 @@ kevin.nowland@gmail.com
 
 ## Work
 
-### 2018 - Present: CoverMyMeds
+### 2017, 2018 - Present: CoverMyMeds
 
-#### Data Scientist 
+#### Data Scientist (Fall 2018-Present)
 
 - Brought to production multiple versions of algorithm
 used to determine approval likelihood for prior authorizations
@@ -42,7 +42,7 @@ sent to the pharmacy.
 company-wide volume and revenue projections.
 - Started company data science journal club.
 
-#### Intern
+#### Intern (Summer 2017)
 
 - Implemented hyperparameter tuning algorithms in scala
 
