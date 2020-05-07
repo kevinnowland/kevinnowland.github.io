@@ -21,7 +21,7 @@ Bordeaux, France, which encouraged me to keep learning French
 after taking a required language course earlier in my graduate studies.
 As an undergraduate, I spent a semester in
 Madrid, but that didn't end up being as fruitful as my time in 
-France was for a variety of reasons, but mostly because I was so 
+France for a variety of reasons, but mostly because I was so 
 much younger.
 
 This whole website is an about me, so this is probably enough on this page.
