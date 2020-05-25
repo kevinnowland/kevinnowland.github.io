@@ -682,6 +682,8 @@ Immediately below this is a too long series of functions that are used to plot
 information related to the training of the tewo neural networks.
 
 ```python
+from itertools import product
+
 def plot_background(ax, nn, alpha=.1, has_bias=False):
     """ plots 100^2 points on [-5,5]^2 grid colored
     based on the raw output from the neural net """
