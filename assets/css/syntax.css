@@ -17,6 +17,9 @@ div.highlight {
     border-radius: 5px;
     margin-top:5px;
     margin-bottom:5px;
+   
+    max-height:450px;
+    overflow-y: scroll;
 }
 
 div[class=highlighter-rouge] .highlight {
