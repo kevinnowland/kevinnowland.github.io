@@ -57,3 +57,6 @@ pour un gen comme moi. J'ai lit une critique quelque part qui
 a dit que le reste du roman n'est pas aussi intelligent que 
 ce que j'ai déjà fini, mais j'ai envie de commence avec les furies
 de Mathilde.
+
+EDIT: J'avais tort. Lotto ne s'est suicider, il a souffert le
+même destin que son père, un anévrisme.
