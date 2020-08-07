@@ -3696,7 +3696,7 @@ layer. We calculate
 $$
 \begin{align*}
     \frac{\partial\ell}{\partial{w^T_k}}
-    &= \frac{\partial}{\partial{w^T_k}}(1 - y\sigma_{T+1}'(W^To_T)) \\
+    &= \frac{\partial}{\partial{w^T_k}}(1 - y\sigma_{T+1}(W^To_T)) \\
     &= -y \sigma_{T+1}'(a_{T+1})o_{T-1, k}.
 \end{align*}
 $$
@@ -3741,7 +3741,7 @@ $$
 
 This already shows how backpropogation might work. A first forward pass through the neural
 net is necessary to calculate the $a\_i$ and $o\_i$, while on the backward pass we
-calculate the derivates one layer at a time, from output to input, storing the $\delta$
+calculate the derivatives one layer at a time, from output to input, storing the $\delta$
 values along the way to help calculate successive derivatives. However, since the output
 layer only has one neuron, it's a little bit cheating to say that we are done, so
 let's calculate a derivative with respect to 
