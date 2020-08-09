@@ -3749,7 +3749,7 @@ $w^{T-2}\_{n, m}$
 to get the full scope of
 the behavior. What changes here is that while $w^{T-2}\_{n, m}$ only feeds neuron $n$
 in $V\_{T-1}$, but neuron $n$ in $V\_{T-1}$ feeds every neuron in $V\_T$, of which there are
-multiple. So now the calculate looks like
+multiple. So now the calculation looks like
 
 $$
 \begin{align*}
