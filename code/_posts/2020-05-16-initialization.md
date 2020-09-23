@@ -1,6 +1,7 @@
 ---
 layout: code-post
 title: Training neural nets - Initialization
+description: Careful initialization seems to be necessary to train MLPs
 tags: [neural nets]
 ---
 

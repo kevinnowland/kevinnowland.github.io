@@ -1,6 +1,7 @@
 ---
 layout: code-post
 title: Training neural nets - What happens?
+description: Digging into training MLPs with SGD with some visualizations and an idea about distances between NNs
 tags: [neural nets]
 ---
 

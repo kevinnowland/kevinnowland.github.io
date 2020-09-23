@@ -1,6 +1,7 @@
 ---
 layout: code-post
 title: Intro to Productionization- APIs and Docker
+description: A lecture given for the Erdos Institute about the basics of ML productionization
 tags: demo
 ---
 

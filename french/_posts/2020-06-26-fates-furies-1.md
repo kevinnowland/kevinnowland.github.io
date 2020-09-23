@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Les Furies I
+description: Un livre en aglais mais un critique en français
 tags: critique
 ---
 

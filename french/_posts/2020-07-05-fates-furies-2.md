@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Les Furies II
+description: La deuxième partie d'un roman dans deux tranchex
 tags: critique
 ---
 

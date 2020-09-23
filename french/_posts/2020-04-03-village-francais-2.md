@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Un Village Français 2
+description: Six autres épisodes
 tags: critique
 ---
 
 Apparemment j'ai suelement accès aux premières douze épisodes d'Un Village
-Français avec mon abonnement Amason. C'est dommage parce que ces épisodes
+Français avec mon abonnement Amazon. C'est dommage parce que ces épisodes
 m'ont beaucoup plu. Ca va être étonnant après ayant lu cette critique, mais
 quand même c'est la vérité.
 

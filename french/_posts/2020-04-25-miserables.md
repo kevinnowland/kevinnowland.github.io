@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Les Misérables (2019)
+description: Un film étonnant que j'ai apprécié à la fin
 tags: [critique]
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Trop semblable à l'éclair
+description: La SF et la forme et la fonction
 tags: critique
 ---
 

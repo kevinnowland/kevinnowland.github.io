@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Un Village Français 1
+description: Les premiers épisodes de cette série
 tags: critique
 ---
 

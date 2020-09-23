@@ -1,6 +1,7 @@
 ---
 layout: code-post
 title: Experimenting with PyTorch
+description: This is a super basic intro to PyTorch since it's new to me
 tags: [neural nets]
 ---
 

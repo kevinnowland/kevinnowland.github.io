@@ -1,6 +1,7 @@
 ---
 layout: code-post
 title: Training neural nets - Backpropagation
+description: How exactly does backpropogation work? I walk through a derivation
 tags: [neural nets]
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: code-post
-title: sample notebook post
+title: Sample notebook post
+description: So uhh.. how exactly do I post something?
 tags: demo
 ---
 

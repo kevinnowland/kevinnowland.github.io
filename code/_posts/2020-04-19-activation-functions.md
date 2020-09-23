@@ -1,6 +1,7 @@
 ---
 layout: code-post
 title: Shallow Neural Nets and Activation Functions
+description: I go into too much detail about the basics of activation functions
 tags: [neural nets]
 updated: "26 April 2020"
 ---

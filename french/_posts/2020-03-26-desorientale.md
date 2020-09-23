@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Désorientale
+description: Livre de Négar Djavadi
 tags: critique
 ---
 

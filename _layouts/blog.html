@@ -15,7 +15,7 @@ layout: default
 
 <span class="blogtags">
 
-  <button onClick="displayPosts('all')">All</button>
+  <button onClick="displayPosts('all')">All tags</button>
 
   {% assign sorted_tags = site.tags | sort %}
   {% for tag in sorted_tags %}
@@ -42,15 +42,20 @@ layout: default
         {% if p.categories contains page.title  %}
         {% if p.tags contains t %}
             {% assign i = i | plus: 1 %}
-            {% if i > 5 %}
-                <li class="vanishing-li" style="display:none;">
+            {% if i > 3 %}
+                <div class="post vanishingPost" style="display:none;">
             {% else %}
-                <li>
+                <div class="post">
             {% endif %}
-                <a href="{{ p.url }}">
-                  {{ p.date | date_to_string }} - {{ p.title }}
-                </a>
-              </li>
+                {% if i > 1 %}
+                <hr>
+                {% endif %}
+                <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
+                <span class="date">{{ p.date | date_to_string }}</span>
+                <p>
+                    {{ p.description }}
+                </p>
+              </div>
         {% endif %}
         {% endif %}
     {% endfor %} <!-- p in site.posts -->
@@ -63,7 +68,7 @@ layout: default
   function displayPosts(activate) {
 
     var divs = document.getElementsByClassName("blogDiv");
-    var vanishingLIs = document.getElementsByClassName("vanishing-li");
+    var vanishingPosts = document.getElementsByClassName("vanishingPost");
 
     if (activate == "all") {
 
@@ -71,8 +76,8 @@ layout: default
         divs[i].style.display = "block";
       }
 
-      for (var i=0; i < vanishingLIs.length; i++) {
-        vanishingLIs[i].style.display = "none";
+      for (var i=0; i < vanishingPosts.length; i++) {
+        vanishingPosts[i].style.display = "none";
       }
 
     } else {
@@ -85,8 +90,8 @@ layout: default
         }
       }
 
-      for (var i=0; i < vanishingLIs.length; i++) {
-        vanishingLIs[i].style.display = "list-item";
+      for (var i=0; i < vanishingPosts.length; i++) {
+        vanishingPosts[i].style.display = "block";
       }
 
     }

@@ -1,6 +1,7 @@
 ---
 layout: code-post
 title: Perceptron
+description: If we're going to talk about neural nets, gotta start with the perceptron
 tags: [neural nets]
 ---
 
