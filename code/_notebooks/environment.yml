@@ -1,16 +1,21 @@
 name: gitpage
+channels:
+  - conda-forge
+  - defaults
 dependencies:
-    - python=3.7
-    - pandas=1.0.*
-    - numpy=1.18.*
-    - ipykernel=5.1.*
-    - jupyterlab=1.2.*
-    - seaborn=0.10.*
-    - scikit-learn=0.22*
-    - matplotlib=3.1.*
-    - nb_conda_kernels=2.2.*
-    - pip
-    - flask
-    - gunicorn
-    - pytorch
-    - torchvision
+  - python=3.7
+  - flask
+  - gunicorn
+  - ipykernel=5.1.*
+  - jupyterlab=1.2.*
+  - matplotlib=3.1.*
+  - nb_conda_kernels=2.2.*
+  - numpy=1.18.*
+  - nltk
+  - pandas=1.0.*
+  - pip
+  - pytorch
+  - scikit-learn=0.22*
+  - spacy
+  - seaborn=0.10.*
+  - torchvision
