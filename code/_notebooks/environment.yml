@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.7
+  - ansible-vault
   - flask
   - gunicorn
   - ipykernel=5.1.*
@@ -15,7 +16,10 @@ dependencies:
   - pandas=1.0.*
   - pip
   - pytorch
+  - pyyaml
   - scikit-learn=0.22*
   - spacy
   - seaborn=0.10.*
   - torchvision
+  - pip:
+    - praw
