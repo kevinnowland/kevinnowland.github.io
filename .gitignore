@@ -8,3 +8,5 @@ code/_notebooks/.ipynb_checkpoints/
 *swp
 code/_notebooks/erdos_deployment_lecture/.ipynb_checkpoints/
 code/_notebooks/erdos_deployment_lecture/__pycache__/
+code/_notebooks/data/lakers*pkl
+code/_notebooks/data/heat*pkl
