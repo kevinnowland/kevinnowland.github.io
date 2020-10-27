@@ -1,7 +1,7 @@
 ---
 layout: code-post
 title: Pedicting rooting interests on reddit
-description: Going to see if we can predict neutral fan rooting interests from reddit posts.
+description: By feeding reddit NBA game thread data into an LSTM based RNN we try to predict the rooting interests of neutral fans in the NBA finals.
 tags: [neural nets]
 ---
 
@@ -42,7 +42,7 @@ organized into communities called _subreddits_. The site has _users_ which belon
 multiple subreddits. Each subreddit contains a sequence of _submissions_ (also called
 _posts_) which can be links
 to other sites, images, or text. Each post contains _comments_ which are text only
-an are made by the users. The _comment section_ is organized as a forest of trees
+and are made by the users. The _comment section_ is organized as a forest of trees
 wich top level comments and then comments nested below each top level comment. Each
 user can have a _flair_ which varies with the subreddit they are posting in. The
 flair and username are posted along with each comment. The flair will contains a
@@ -52,7 +52,7 @@ subreddit in order to post, although this varies by community.
 
 We will be using the NBA subreddit which as of this writing has ~3.5 million users.
 Users in this subreddit have flairs which denote which team the user is a supporter
-of. Mine is for the Cleveland Cavaliers.
+of. Mine is for the Cleveland Cavaliers :(
 
 ### PRAW - Exploring Reddit
 
@@ -66,8 +66,7 @@ and you'll need your `username`. I have put these credentials in an encrypted YA
 that I created using ansible-vault.
 
 We will be using [PRAW](https://github.com/praw-dev/praw), the Python Reddit API
-Wrapper.
-
+Wrapper to access submissions with the "app" we created above.
 ```python
 import praw
 import yaml
@@ -134,7 +133,7 @@ for t in game_threads:
 
 The comments for a submission are contained in PRAW `CommentForest`. If we do not
 care about the structure, we can flatten this to a list. Note that the list
-will contain both `Comment` objects as well as `MoreComments` objectcs. It is possible to replace
+will contain both `Comment` objects as well as `MoreComments` objects. It is possible to replace
 the `MoreComments` objects using the `replace_more` function, but each replacement
 requires calling the reddit API. By default, 32 of the `MoreComments` objects will
 be replaced, which I will keep but I will also limit to those which contain at least
@@ -205,7 +204,7 @@ print('number of comments by Heat users  :', len(heat_comments))
 ### Pushshift - Gathering data
 
 It turns out that PRAW is fairly limited and the [Pushshift API](https://github.com/pushshift/api) is
-more powerful than it. There is a wrapper for this API called [PSAW](https://github.com/dmarx/psaw).
+more powerful. There is a wrapper for this API called [PSAW](https://github.com/dmarx/psaw).
 PSAW and PRAW interact with each other nicely: if you pass a PRAW `Reddit` instance to PSAW's
 `PushShiftAPI` class, pushshift gathers the IDs you want but then returns PRAW objects.
 
@@ -358,7 +357,7 @@ Since I'm going to use spaCy's vector encoding for the words instead of a dummy
 one-hot encoding, I thought about replacing the player names with a placeholder
 such as `heatplayer`, but this appears to be mostly unnecessary, as the vectorizer
 that is build in already knows names such as `lebron`. One can confirm this with
-`nlp('lebron')[0].vector` and see it is not hte zero vector.
+`nlp('lebron')[0].vector` and see it is not the zero vector.
 
 ```python
 # let's reload things as needed
@@ -559,11 +558,12 @@ and train a model to predict whether a post is by a Lakers fan or by a Heat fan.
 
 ### Dataset
 
-This section is about creating a PyTorch `Dataset` that loads the data
-that we scraped from Reddit and cleaned in the data collection section. Data cleaning
-is data modeling, while what we do here is not.
+We create a PyTorch `Dataset` that loads the data
+that we scraped from ceddit and cleaned in the data collection section. Data cleaning
+is data modeling, while what we do here is not, so why is this in the modeling
+section?
 
-We will try to use the `WeightedRandomSampler` (with replacement) so that we can return
+We will use the `WeightedRandomSampler` (with replacement) so that we can return
 comments from Lakers and Heat fans with equal probability even though the two
 classes are imbalanced.
 
@@ -628,10 +628,10 @@ training_data = TrainDataset(lakers_vector_comments, heat_vector_comments)
 ```
 
 Now we set up the sampler so that it chooses Lakers and Heat comments with equal probability.
-We do this because we expect (foolishly, probably) that comments by neutral fans on game
-threads are equally likely to be for the Lakers as for the Heat. This is almost certainly
-false since LeBron plays for the Lakers and is undoubtedly the most popular player in
-the league, but we'll use this assumption for now.
+This is necessary since we don't want the model to guess that truly neutral comments
+are from Lakers fans by default. We'll see -- since I'm writing this line after the post
+was initially written and know this -- that the model doesn't really predict anything
+to be neutral, but at least we know it should not be overly biased toward the Lakers.
 
 ```python
 from torch.utils.data.sampler import WeightedRandomSampler
@@ -667,7 +667,7 @@ And now we create our LSTM based model to predict whether a comment comes from a
 It seems to be an open question of how large the hidden state should be in an LSTM. It seems that some number
 between the input and output layers should work and ultimately this is something that would need to be
 optimized for on a validation set. I'm not going to bother with that and just set it to be 128, i.e., a power of
-2 that is just under half of the input size and hope that works out well enough. Some discussions can be found on [stackexchange](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw/136542#136542)
+2 that is just under half of the input size of 300 and hope that works out well enough. Some discussions can be found on [stackexchange](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw/136542#136542)
 and [quora](https://www.quora.com/In-LSTM-how-do-you-figure-out-what-size-the-weights-are-supposed-to-be) so take
 that how you want, dear reader. The PyTorch LSTM docs are [here](https://pytorch.org/docs/stable/generated/torch.nn.LSTM.html).
 
@@ -723,10 +723,9 @@ print('random output from random input:', test_out)
 ### Training
 
 Now let's train. We'll use ADAM to optimize and mean square error loss. We're not
-going too crazy here, ya know. I'll probably write this elsewhere in this post, but 
-I don't think we're going to get great results. This is because fundamentally I don't
-believe that there's much signal in the training examples and that this is a hard
-problem.
+going too crazy here, ya know? As mentioned in the introduction, I don't 
+expect great results since I don't know how much signal there is relative to the
+noise.
 
 ```python
 from torch.optim import Adam
