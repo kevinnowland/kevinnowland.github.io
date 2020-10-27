@@ -1,7 +1,7 @@
 ---
 layout: code-post
 title: Pedicting rooting interests on reddit
-description: By feeding reddit NBA game thread data into an LSTM based RNN we try to predict the rooting interests of neutral fans in the NBA finals.
+description: I try to predict the rooting interests of neutral fans in the NBA finals by feeding reddit NBA game thread data into an LSTM based RNN 
 tags: [neural nets]
 ---
 
