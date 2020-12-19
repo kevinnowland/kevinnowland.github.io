@@ -53,33 +53,28 @@ output.
 
 ## Ruby stuff
 
+Ruby frustrates me so much compared to python.
+I got `rbenv` installed just using `apt` and then installed
+`ruby-build` into the `~/.rbenv/plugins` directory.
 
-I am not a ruby programmer, I am leaving some notes to 
-myself that document how I got jekyll setup on my mac
-when I had been doing things on ubuntu.
-
-Assuming you have `rbenv` installed, make sure ruby 2.7.0.
-I had to update the available versions with (on mac, at least)
-```bash
-brew upgrade ruby-build
-```
-On my ubuntu machine I'm not sure what would be required. I then ran
+I then did 
 ```bash
 rbenv install 2.7.0
 rbenv global 2.7.0
 ```
-to install and make this version the global version. The next
-step was to install the proper version of bundler, which is 2.1.4 (as
-of this writing, this is the stable version).
+
+For consistency sake with earlier README versions I
+ran 
 ```bash
-gem install bundler 
+gem install bundler -v 2.1.4
 ```
-Then the jekyll server got started with
-```bash
-bundle exec jekyll serve
+but the command
 ```
-In this repository, I ran
-```bash
 bundler install
 ```
-because it knows how to use the Gemfile. I think.
+in this repo failed because of an ffi verison.
+So then I ran
+```bash
+sudo apt-get install libffi-dev
+```
+and then I could `bundler install`.
