@@ -58,7 +58,7 @@ output.
 Ruby frustrates me so much compared to python. This is being
 updated for instructions used on Ubuntu 20.04.1.
 I got `rbenv` installed just using `apt` and then installed
-`ruby-build` into the `~/.rbenv/plugins` directory.
+`ruby-build` into the `~/.rbenv/plugins` directory just by cloning it there.
 
 I then did 
 ```bash
