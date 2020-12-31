@@ -54,9 +54,23 @@ un citoyen des premières nations du Canada qui fait référence à Barthes
 et plusieurs autres. Par contre, je me positionne dans la vie avec 
 ce que je vois comme des principes généraux, mais pas avec des théories 
 élaborées et complexes. Je trouve les oeuvres comme celles-ci presque
-impénétrable quand je ne connais pas leurs fondes. Barthes est plus
+impénétrables quand je ne connais pas leurs fondes. Barthes est plus
 facile à comprendre en comparaison avec Belcourt, mais toutes les
 références ne m'aide pas beaucoup et en fait elles m'entravent à
 comprendre les idées. Mais si je construisais ma vie commes eux, je
 trouverais le livre génial, certes. (Je suis intelligent, je ne suis pas
 paresseux, c'est juste que je ne pense pas comme ces gens !)
+
+J'imagine la vie de Barthes comme une montaigne russe avec des hauts
+et des bas profondes. Pour moi, la vie en général et la vie amoureuse
+sont plus calmes. Je pense au moi plus jeuene qui ressentais les
+émotions plus comme lui, mais je ne me crois pas si emotionelle, et les
+décriptions des Barthes de ses batailles avec l'amour sont étranges.
+Il agit, ou du moins il pense, presque comme un collégien. Mais je
+ne crois pas que ma façon d'agir est meilleur, en fait je crains que
+je ne me laisse pas ressentir tout ce que je pourrais. Peut-être 
+nous avons justement des différents stratégies pour se débrouiller
+avec les émotions, mais les théories lui laisse ressentir plus.
+Je devrais faire plus d'effort.
+
+
