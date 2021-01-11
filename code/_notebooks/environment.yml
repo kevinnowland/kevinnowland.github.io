@@ -1,10 +1,12 @@
 name: gitpage
 channels:
+  - pytorch
   - conda-forge
   - defaults
 dependencies:
   - python=3.7
   - ansible-vault
+  - cudatoolkit=11.0
   - flask
   - gunicorn
   - ipykernel=5.1.*
