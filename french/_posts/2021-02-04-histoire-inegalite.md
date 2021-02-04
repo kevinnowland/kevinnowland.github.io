@@ -32,7 +32,7 @@ cette attitude est très présent dans la vie, mais naturellement chez nous on a
 le travail avec la richesse et on a l'évangile de la prospérité qui dit que ce n'est pas
 le travail qui est santifié, mais le fait d'avoir de l'argent.
 
-## Episode 2: [Posséder la terre, terreau des inégalités ?](https://www.franceculture.fr/emissions/le-cours-de-lhistoire/tant-quil-y-aura-des-riches-une-histoire-des-inegalites-44-linvention-du-bon-et-du-mauvais-pauvre)
+## Episode 2: [Posséder la terre, terreau des inégalités ?](https://www.franceculture.fr/emissions/le-cours-de-lhistoire/tant-quil-y-aura-des-riches-une-histoire-des-inegalites-24-posseder-la-terre-terreau-des-inegalites)
 
 M. Mauduit et ses invités explorent le paysage grec et comme avoir de la propriété 
 c'est une nécessité pour être un citoyen. Cette systême n'est pas unique dans le
