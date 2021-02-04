@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Une histoire des inégalités
-description: Le cours de l'histoire: tant qu'il y aura des riches
-tags: resume
+description: "Le cours de l'histoire: tant qu'il y aura des riches"
+tags: [résumé de média]
 ---
 
 Je vais essayer de faire quelque chose de nouveau. Auparavant j'ai fait des posts sur
