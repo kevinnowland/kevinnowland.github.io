@@ -58,4 +58,23 @@ de tout le monde et peut-être pour réduire l'inégalité.
 Mais quand même aujourd'hui, rappelle l'invité, tout le monde n'est pas d'accord avec cette 
 fonction des impôts.
 
-## Episode 4: 
+## Episode 4: [Qui a peur du grand déclassement ?](https://www.franceculture.fr/emissions/le-cours-de-lhistoire/le-cours-de-lhistoire-emission-du-jeudi-04-fevrier-2021)
+
+Après une discussion de l'utilization des impôts comme moyen de renverser l'inégalité vient
+finalement une conversation concentrée sur le déclassement en général. Le début de la conversation
+est un peu imprécis, mais puis les invitées parlent de comment la nobilité a perdu 
+un de son stabilité à la fin du XVIIIe siècle. C'est dans cette époque où être bien éduqué
+devient plus important, mais curieusement on n'a pas besoin de gagner un diplôme, suelement
+d'avoir assisté un des grands lycées (ou universités ? je ne suis pas sûre du niveau). 
+Globalement les nobles sont devenus des fonctionnaires et l'éducation est la clé pour
+ce métier. Aujourd'hui il faut avoir un diplôme, et on voit la chute d'une famille
+de la bourgeoisie grâce à ne pas en avoir un. 
+
+Un différence notable de cette conversation aux USA c'est qui chez nous il foudrais parler
+de la race, le facteur déterminant de la richesse d'une famille. Bien que la race soit 
+importante en France, chez eux il n'y a pas la même histoire d'apartheid. Je ne va pas
+en parler plus, mais je suis toujours curieux de suivre les conversations entre les
+français sur la race et les différences entre la France et les USA.
+
+Ben, donc, j'ai fini avec cette série de podcasts en réécute, du moins avec la prémière 
+partie de chaque épisode. Au revoir.
