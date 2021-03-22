@@ -12,7 +12,7 @@ il atteint quarante ans. Il veut passer un temps plus simple en quittant Paris o
 il est écrivain. C'est la même village où habite un ami de l'époque où il
 était étudiant, avec qui il a fait le stop pour voyager autour de la France.
 L'autostoppeur vit avec sa femme, qui s'appelle Marie, et son fils, qui a 
-aussi un prénom: Augustin. Ils sont contents, et l'autostoppeur et heureux de
+aussi un prénom: Agustín. Ils sont contents, et l'autostoppeur et heureux de
 voir de nouveau son ami même si ça fait une décennie qu'ils ne se sont pas parlé.
 Il n'y avait pas de raison pour ne pas se parler, c'est juste que la vie est
 compliquée et les gens se changent.
@@ -26,7 +26,7 @@ de la France avec des inconnus aui deviennent ses amis par une heure ou deux.
 Il les photographie et enoie les photos chez soi avec aussie des cartes postales,
 des centaines de photos des églises et autres monuments.
 Sa femme est agacée mais pas trop et puis ne l'est plus. Il est l'autostoppeur, 
-c'est ce qu'il faut faire. Il lui manque à Augustin, mais même l'enfant 
+c'est ce qu'il faut faire. Il lui manque à Agustín, mais même l'enfant 
 parait comprendre la nature essentielle de son père.
 
 Sacha tentait à vivre plus simplement que dans la capitale. Il est venue dans
@@ -37,17 +37,17 @@ Sacha passe la nuit avec Jeanne, mais les deux connaissent que c'est juste
 pour une nuit ou deux. Vite, il est chez l'autostoppeur pour dîner et voir
 sa collection des polaroids des automobilistes qui l'avaient aidé dans ses
 voyages anciennes qui sont bientôt de retour. Lorsque l'autostoppeur fait
-de stop, Marie et Sacha passent du temps ensemble. Ils emmène Augustin 
+de stop, Marie et Sacha passent du temps ensemble. Ils emmène Agustín 
 au plage quand il y a un coup de fil par l'autostoppeur, et ils savent
 que tout a changé. C'est après cette fois que l'autostoppeur s'arrête de
 rentrer souvent chez soi. La dernière fois que l'autostoppeur part, Sacha
 lui conduit la première heure de la voyage. Il l'avertit s'il part 
 maintenant, tout va changer pour Marie, mais l'autostoppeur le sait
 déjà et il part quand même. Marie part aussie pour dix jours et
-Sacha se charge d'Augustin tandis qu'elle passer la nuit avec un ex-amant
+Sacha se charge d'Agustín tandis qu'elle passer la nuit avec un ex-amant
 et puis cherche l'autostoppeur. Elle le trouve et ils passent une journée 
 ensemble mais la nuit dans deux chambres différentes dans un hôtel. 
-Elle revient et bientôt Sacha et elle vivent ensemble avec Augustin. 
+Elle revient et bientôt Sacha et elle vivent ensemble avec Agustín. 
 
 Pour moi l'autostoppeur n'existe pas. Il est la jeunesse de Sacha. Il
 n'est pas l'ami de Sacha quand il commence à travailer après l'université.
