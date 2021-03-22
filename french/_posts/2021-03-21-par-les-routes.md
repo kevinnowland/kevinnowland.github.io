@@ -1,20 +1,9 @@
 ---
 layout: post
-title: Par les routes
+title: Par les routes de Sylvain Prudhomme
 description: Un homme et un ami de sa jeunesse
 tags: critique
 ---
-
-Le style d'écriture
-  - simple
-  - fragments brèves dans certains sections
-
-La relation avec Jeanne et puis avec Marie
-  - 
-
-Autostoppeur sans vrai nom
-  - comme archetype
-  - comme la jeunesse de Sacha
 
 
 Il reste toujours juste l'autostoppeur, sans nom et sans prénom. Le protagoniste,
