@@ -1654,11 +1654,3 @@ plt.show()
 I believe that we are making progress. I think we just need to keep running the $*@#&! out of
 this simulation and hope that we eventually learn something a little more real. Frankly,
 it probably sees the early game so much that it has a better idea of what it wants to do there.
-
-```python
-
-```
-
-```python
-
-```
