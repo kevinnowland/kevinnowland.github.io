@@ -5,17 +5,6 @@ description: "C'est quoi, une personne ?"
 tags: [critique]
 ---
 
-- La joie de vivre dans un autre langue
-  - mais je viens de l'empire
-  - je ne connais personne d'un pays comme la station
-- je n'ai pas maitrisé les autres langues que je parle
-- Beaucoup d'intrigue pour seulement une semaine
-- Les souvenirs greffés dans le cerveau
-  - c'est qoui une personne?
-  - ce n'est pas le bateau de Thésée, parce qu'on ajoute des trucs
-  - je veux savoir l'effet après c'est plus efficace
-
-
 Mahit Dzmare vient en Teixcalaan en tant que nouvelle ambassadrice
 pour Lsel Station, un genre de pays qui se compose de plusiers
 stations spatiales au bord de la grand Empire Teixcalaanli. Elle
