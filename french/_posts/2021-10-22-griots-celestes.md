@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Griots céléstes: Qui-vient-du-bruit
-description: 
+title: Griots célestes&#58; Qui-vient-du-bruit
+description: Une pas bonne commencement
 tags: [critique]
 ---
 
-J'ai lu les premiers 75 pages du premier roman du cycle _Griots céléstes_
+J'ai lu les premiers 75 pages du premier roman du cycle _Griots célestes_
 de Pierre Bordage et j'au de l'appréhension pour le finir. Dans ces pages
 Bordage nous présente plusieurs personnages dont trois femmes. La
 rêveuse, Jozbeth,  est une genre de diseuse de bonne aventure et, confronté
@@ -22,7 +22,7 @@ une parasite qui leur donne de plaisir avec la moindre émotion et
 qui leur renforce pour mieux souvent coucher avec leur clients. Elle
 est une type de super-prostituée. La troisième femme s'appelle Ezabel et
 elle renconter un homme pour la première fois dans une grande queue pour
-voir le griot céléste du titre et après une suele conversation ils
+voir le griot céleste du titre et après une suele conversation ils
 sont fiancés.
 
 Raconter une histoire qui commence avec ces événements démande de soin. 
@@ -34,7 +34,7 @@ Bordage a utilisé les femmes suelement pour montrer que ce monde est
 dans un état médiéval. Il présente le point de vue de Kaleh avant que
 sa mort rapide, mais les autres personnages principaux sont des hommes.
 Le fils de Kaleh est le garçon nommé Qui-vient-du-bruit et le
-seul griot céléste qu'on a vue dès maintenant est aussi masculin.
+seul griot céleste qu'on a vue dès maintenant est aussi masculin.
 Je vais continuer a le lire, mais je suis déjà un peu méfiant. 
 
 ---
