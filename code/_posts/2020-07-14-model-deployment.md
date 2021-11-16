@@ -22,7 +22,7 @@ We will focus on the first two points above.
 
 API stands for _Application Programming Interface_ and refers to how your
 code is exposed to others. For example, people will talk about the fact
-that `matplotlib` as two APIs: the one based on repeatedly plotting and 
+that `matplotlib` has two APIs: the one based on repeatedly plotting and 
 the one based on using `axes` objects. You also hear people talk about accessing
 Twitter's API to get the content of tweets.
 
@@ -201,7 +201,7 @@ specific file directory locations, and allowing language specific code to be
 used in setting up the HTML files that are ultimately displayed in a public
 facing website. Examples of framworks include 
 [django](https://www.djangoproject.com/) and
-[cherryPy](https://cherrypy.org/) for python and 
+[cherryPy](https://docs.cherrypy.dev) for python and 
 [rails](https://rubyonrails.org/) for ruby. Flask is fairly lightweight and 
 easy to get started with, so we will use this.
 
@@ -414,7 +414,7 @@ $ curl 'localhost:5001/?sepal_length=7.7&sepal_width=3.0&petal_length=6.1&petal_
 {"prediction":"2"}
 ```
 Note that we did not have to curl a specific worker, we just had to 
-curl to the port and gunicorn took care of delgating the task for us.
+curl to the port and gunicorn took care of delegating the task for us.
 
 ### Nginx?
 
@@ -756,4 +756,4 @@ as!).
 many images.
 - Try running your docker image on a virtual machine in the cloud.
 
-This post was created for a lecture for the [Erdos institute](erdosinstitute.org).
+This post was created for a lecture for the [Erdos institute](https://erdosinstitute.org).
