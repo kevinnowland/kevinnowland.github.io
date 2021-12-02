@@ -22,7 +22,16 @@ Kevin Nowland
 
 ## Work
 
-### 2017, 2018 - Present: [CoverMyMeds](https://www.covermymeds.com/main/)
+### 2021 - Present: [Aware](https://www.awarehq.com)
+
+#### Machine Learning Operations Engineer
+
+- Helping data scientists and analysts iterate and bring models and insights
+to production faster. Idk, I just started, come back later when I've done
+something. So far I've been playing around with provisioning AWS resources via
+Terraform and implementing CI/CD for custom images for use in Amazon SageMaker.
+
+### 2017, 2018 - 2021: [CoverMyMeds](https://www.covermymeds.com/main/)
 
 #### Senior Data Scientist (2020-Present); Data Scientist (2018-2020)
 
@@ -56,7 +65,7 @@ hyperparameter tuning in scala.
 
 ### 2017, 2020 - Present: [Erdos Institute](https://erdosinstitute.org/)
 
-#### 2020-Present: Head of Alumni Relations
+#### Head of Alumni-Led Programming (2021-present), Head of Alumni Relations (2020-2021)
 
 - Started Boot Camp Plus seminar for graduates of the Erdos Institute
 Data Science Boot Camp to help build additional skills 

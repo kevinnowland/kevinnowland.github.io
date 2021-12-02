@@ -14,7 +14,7 @@ doesn't want to run with me, reading tons of books, and trying to
 re-learn how to play piano (I think I'm once again about as proficient as when
 I quit as a middle schooler?). 
 
-I work as a data scientist and once got a PhD in math from The Ohio
+I work as an ML Ops Engineer and once got a PhD in math from The Ohio
 State University in analytic number theory. As a graduate student
 I was lucky to have the opportunity to spend a semester in
 Bordeaux, France, which encouraged me to keep learning French
