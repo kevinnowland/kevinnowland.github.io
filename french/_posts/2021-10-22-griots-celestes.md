@@ -38,3 +38,6 @@ seul griot céleste qu'on a vue dès maintenant est aussi masculin.
 Je vais continuer a le lire, mais je suis déjà un peu méfiant. 
 
 ---
+
+Okay, j'ai lu 75 pages de plus et la violence contre les femmes
+a continué sans plus de justifiation. J'ai arrêté de le lire.
