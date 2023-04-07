@@ -1,4 +1,4 @@
 ---
 layout: forward
-target: google.com
+target: nowdacy-golfers.jqjpgrfous9bm.us-east-2.cs.amazonlightsail.com
 ---
