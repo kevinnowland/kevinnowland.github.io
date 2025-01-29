@@ -1,9 +1,0 @@
-# Jekyll config
-name: Kevin Nowland
-description: Kevin Nowland's personal site
-url: kevinnowland.com
-markdown: kramdown
-highlighter: rouge
-kramdown:
-    input: GFM
-    math_engine: mathjax
