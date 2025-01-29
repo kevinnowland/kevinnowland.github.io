@@ -2,12 +2,14 @@ body {
   font-size: 125%;
   font-family: "Open Sans";
 
+  text-align: justify;
+
   margin-top: 2.5%;
   margin-right: 10%;
   margin-left: 2.5%;
 
   padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-right: 4%;
   padding-bottom: 2.5%;
 
   border-style: solid none none solid;
