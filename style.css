@@ -27,4 +27,9 @@ body {
 
 a {
   color: green;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #644117;
 }
