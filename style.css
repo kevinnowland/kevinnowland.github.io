@@ -1,14 +1,45 @@
 body {
-  margin: 2.5%;
+  font-size: 125%;
 
+  margin-top: 2.5%;
+  margin-right: 10%;
+  margin-left: 2.5%;
+
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 2.5%;
+
+  border-style: solid none none solid;
+  border-radius: 10px 0px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* themes */
+
+/* orange and tan
+
+body {
   background-color: #383838;
   color: #e3dac9;
-
-  font-size: 125%;
 }
 
 a {
   color: #ff8c00;
-  text-decoration: none;
-  font-weight: bold;
+}
+
+*/
+
+/* greens */
+
+body {
+  background-color: #001515;
+  color: #faf0e6;
+}
+
+a {
+  color: green;
 }
